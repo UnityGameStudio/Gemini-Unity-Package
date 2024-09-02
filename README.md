@@ -21,7 +21,7 @@ To get started you will first need to fetch your Google API key, which can be fo
 
 ![](/Images/ScreenShot4.JPG)
 
-### Step 2: Go to Goole Apps Script
+### Step 2: Go to Google Scripts
 The script will run through Google Script - (or through [this direct link](https://www.google.com/script/start/)). Therefore, you need to create a new project. Inside the script, paste the content from `GoogleScriptGeminiAPI.txt`, and replace the `Key` with your secret key in the `API Key` field. Once this is done, you can safely create a new `Deploy` as a web app with access for anyone. Now, you will get a Google Script URL for calling the script. 
 
 ![](/Images/ScreenShot1.JPG)
