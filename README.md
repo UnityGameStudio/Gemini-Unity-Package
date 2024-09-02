@@ -1,13 +1,11 @@
 # Gemini-Unity-Package
-> Currently, this plugin is only suported on versions of Unity 2022.x and above
+> Currently, this plugin is only suported on versions of Unity 2021.x and above
 
 # Installation
 
-This plugin is provided as a custom Unity package that you can import into any existing project with the Unity version 2022.x and above.
+This plugin is provided as a custom Unity package that you can import into any existing project with the Unity version 2021.x and above.
 
-Once you've downloaded the Unity package, you can them import it into your project. Then, you will need to add it to an object in the scene as a component. 
-
-A video can be found [through this link](https://youtu.be/GJyrNXCUan8) showing the package import process (if you're having trouble).
+Once you've downloaded the Unity package, you can them import it into your project through the `Gemini_Manager` prefab. 
 
 ---
 
@@ -15,31 +13,30 @@ A video can be found [through this link](https://youtu.be/GJyrNXCUan8) showing t
 
 This plugin provides public functions to send a prompt, and receive a text reply from the Gemini API.
 
-The focus here is purely convenience in being able to access a LLM without leaving Unity. This helps to facilitate asking questions, exploring topics, generating ideas, and sometimes debugging issues.
+The focus here is to provide an alternative to ChatGPT.
 
 
 ### Step 1: Login to your Google account and copy your secret key
-To get started (once you have the plugin imported), you will first need to fetch your OpenAI API key, which can be found in your account dropdown under `View API Keys` (or through [this direct link](https://platform.openai.com/account/api-keys)). Here, you can create a new secret key and copy the value (you will need to add your secret key inside the Unity Editor).
+To get started you will first need to fetch your Google API key, which can be found in your Google AI Studio account under `Get API Key` (or through [this direct link](https://aistudio.google.com/app/apikey)). Here, you can create a new secret key and copy the value (you will need to your secret key for the next step).
 
-![](/images/openai-api-key-location.png)
+![](/Images/ScreenShot4.JPG)
 
-### Step 2: Add your OpenAI secret key to your Unity Project Settings
-Back in Unity open `Project Settings`, navigate to `Unity ChatGPT` from the sidebar and then input your OpenAI secret key in the `API Key` field. Once this is done, you can safely close the `Project Settings` window.
+### Step 2: Go to Goole Apps Script
+The script will run through Google Script - (or through [this direct link](https://www.google.com/script/start/)). Therefore, you need to create a new project. Inside the script, paste the content from `GoogleScriptGeminiAPI`, and replace the `Key` with your secret key in the `API Key` field. Once this is done, you can safely create a new `Deploy` as a web app with access for anyone. Now, you will get a Google Script URL for calling the script. 
 
-![](/images/unity-chatgpt-project-settings.png)
+![](/Images/ScreenShot1.JPG)
+![](/Images/ScreenShot2.JPG)
+![](/Images/ScreenShot3.JPG)
 
 
-### Step 3: Open the Unity ChatGPT Window and start using
-In the navigation bar you will see an `NTY` menu option which will contain the `Unity ChatGPT` tool. Click this to open the Unity ChatGPT editor window and dock this window wherever you would like.
+### Step 3: Open the Unity, configure it and start using
+Inside the package, you will find a `Gemini_Manager` prefab. Drag the prefab into your scene, and add your Google Script URL inside the `JsonModel`. We recommend doing that, so you can git ignore your JSON file when working with github. In the component bar you will see a `JsonURL` option which will contain the `JsonModel` text Asset. When starting, it will call the URL, and if you check the `Use Prompt`, you will receive an answer from the LLM at the beginning of the game.
 
-![](/images/unity-chatgpt-dockable-window.png)
+![](/Images/ScreenShot5.JPG)
 
 
 # Usage
-When you enter a prompt and send it, you will see a loading icon appear at the bottom right of the window while the API is busy consuming the request and returning the response.
+When you enter a prompt and send it, Unity will send the prompt to the Google Script, then it will receive the response, and make a `Debug.Log` of the reply.
 
-When ChatGPT has completed a response, you will see it display in the output log above the prompt input.
-
-
-> Note that each time you send a prompt, a new chat request is sent to OpenAI. What you see in the output log is a history of responses to the prompts you have sent. It is not a continuous conversation as you would experience in a single chat session within the ChatGPT application.
+> Note that each time you send a prompt, a new chat request is sent to Gemini API. 
 
