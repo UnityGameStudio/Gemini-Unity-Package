@@ -31,6 +31,8 @@ The script will run through Google Script - (or through [this direct link](https
 
 ### Step 3: Open the Unity, configure it and start using
 Inside the package, you will find a `Gemini_Manager` prefab. Drag the prefab into your scene, and add your Google Script URL inside the `JsonModel`. We recommend doing that, so you can git ignore your JSON file when working with github. In the component bar you will see a `JsonURL` option which will contain the `JsonModel` text Asset. When starting, it will call the URL, and if you check the `Use Prompt`, you will receive an answer from the LLM at the beginning of the game.
+
+
 ![](/Images/ScreenShot6.JPG)
 ![](/Images/ScreenShot5.JPG)
 
