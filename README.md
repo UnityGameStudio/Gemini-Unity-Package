@@ -5,7 +5,7 @@
 
 This plugin is provided as a custom Unity package that you can import into any existing project with the Unity version 2021.x and above.
 
-Once you've downloaded the Unity package, you can them import it into your project through the `Gemini_Manager_V2` prefab. 
+Once you've downloaded the Unity package, you can import the package into your scene through the `Gemini_Manager_V2` prefab. 
 
 ---
 
