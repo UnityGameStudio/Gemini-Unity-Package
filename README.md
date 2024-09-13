@@ -26,7 +26,7 @@ Inside the package, you will find a `Gemini_Manager_2` prefab. Drag the prefab i
 
 ![](/Images/ScreenShot7.JPG)
 
-In the component bar you will see a `JsonURL` option where you will attach the `JSONTemplate.json` text Asset. When starting, it will call the URL, and if you check the `Use Prompt`, you will receive an answer from the LLM at the beginning of the game.
+In the component bar you will see a `JsonApi` option where you will attach the `JSONTemplate.json` text Asset. When starting the script, it will set your API_Key, and send your `prompt`, then you will receive an answer from the LLM at the beginning of the scene.
 
 ![](/Images/ScreenShot8.JPG)
 
