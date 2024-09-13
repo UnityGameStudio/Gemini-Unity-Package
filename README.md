@@ -21,7 +21,7 @@ To get started you will first need to fetch your Google API key, which can be fo
 
 ![](/Images/ScreenShot4.JPG)
 
-### Step 2: Open the Unity, configure it and start using
+### Step 2: Open the Unity Editor, configure the package, and start using Gemini
 Inside the package, you will find a `Gemini_Manager_2` prefab. Drag the prefab into your scene, and add your API Gemini Secret Key inside the `JSONTemplate.json`. We recommend doing that, so you can git ignore your JSON file when working with github. 
 
 ![](/Images/ScreenShot7.JPG)
