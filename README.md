@@ -11,7 +11,11 @@ Once you've downloaded the Unity package, you can import the package into your s
 
 # Setup
 
-The focus here is to provide an alternative to ChatGPT. There is a setup of the previous release (V2) in youtube ([Watch here](https://www.youtube.com/watch?v=Z6MFqIzOHK0&ab_channel=UnityGameStudio)).
+Gemini provides an alternative to ChatGPT for Unity developers. Here's a quick guide to setting up the latest release (V3) and previous release (V2):
+
+- **V3 Setup Guide (Latest Release)**: [Watch the YouTube tutorial](https://www.youtube.com/watch?v=J-6bymbjT_M&ab_channel=UnityGameStudio)
+- **V2 Setup Guide (Previous Release)**: [Watch the YouTube tutorial](https://www.youtube.com/watch?v=Z6MFqIzOHK0&ab_channel=UnityGameStudio)
+
 
 ### Step 1: Login to your Google account and copy your secret key
 To get started you will first need to fetch your Google API key, which can be found in your Google AI Studio account under `Get API Key` (or through [this direct link](https://aistudio.google.com/app/apikey)). Here, you can create a new secret key and copy the value (you will need to your secret key for the next step).
