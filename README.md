@@ -25,7 +25,7 @@ To get started you will first need to fetch your Google API key, which can be fo
 ### Step 2: Open the Unity Editor, configure the package, and start using Gemini
 Inside the package, you will find a `GeminiManager` prefab. Drag the prefab into your scene, and add your API Gemini Secret Key inside the `JSONTemplate.json`. We recommend doing that, so you can git ignore your JSON file when working with github. 
 
-![](/Images/Chatbot.JPG)
+![](/Images/NewUI.JPG)
 
 In the component bar you will see a `JsonApi` option where you will attach the `JSONTemplate.json` text Asset. When starting the script, it will set your API_Key, and send your `prompt`, then you will receive an answer from the LLM at the beginning of the scene.
 
