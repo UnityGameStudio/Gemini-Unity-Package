@@ -51,8 +51,14 @@ There is a sample scene called `Chatbot` in the `Example` folder.
 
 ![](/Images/ChatbotScene.JPG)
 
+Image Prompt Function: 
 
+The script contains an IEnumerator function that sends your prompt to the Gemini API `gemini-2.0-flash-exp-image-generation`, then it receives a generated image, and saves it inside your device.
+There is a sample scene called `SkyGeneration` in the `Example` folder.  
 
+`private IEnumerator SendPromptRequestToGeminiImageGenerator(string promptText)`
+
+![](/Images/SkyScene.JPG)
 
 # Usage
 The unity package was made to directly use the prompt function. When you enter a prompt and send it (click on play), Unity will send the prompt to the Gemini API, then it will receive the response, and make a `Debug.Log` of the reply.
