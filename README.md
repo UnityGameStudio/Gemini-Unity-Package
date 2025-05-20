@@ -47,6 +47,10 @@ Chatbot Function:
 The script contains an IEnumerator function that stores the user and Gemini responses, then sends the chat history to the Gemini API and prints the response to the console by calling Debug.Log().
 There is a sample scene called `Chatbot` in the `Example` folder.  
 
+The chatbot function now possess a `Bot Instructions` field, where you can add a behaviour, a knowdlege base or a background story to your chatbot.
+
+![](/Images/BotInstruction.JPG)
+
 `private IEnumerator SendChatRequestToGemini(string newMessage)`
 
 ![](/Images/ChatbotScene.JPG)
@@ -59,6 +63,16 @@ There is a sample scene called `SkyGeneration` in the `Example` folder.
 `private IEnumerator SendPromptRequestToGeminiImageGenerator(string promptText)`
 
 ![](/Images/SkyScene.JPG)
+
+Multimodal Prompt Function:
+
+The script contains an IEnumerator function that reads a Media File through its File Path, then sends the bytes to the Gemini API along with your prompt. After, it prints the response to the console by calling Debug.Log().
+
+There is a `Media` folder with sample files inside the `Example` folder. 
+
+`private IEnumerator SendPromptMediaRequestToGemini(string promptText, string mediaPath)`
+
+![](/Images/MediaFile.JPG)
 
 # Usage
 The unity package was made to directly use the prompt function. When you enter a prompt and send it (click on play), Unity will send the prompt to the Gemini API, then it will receive the response, and make a `Debug.Log` of the reply.
