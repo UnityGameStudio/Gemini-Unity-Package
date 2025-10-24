@@ -55,14 +55,16 @@ The chatbot function now possess a `Bot Instructions` field, where you can add a
 
 ![](/Images/ChatbotScene.JPG)
 
-Image Prompt Function: 
+[Legacy] Image Prompt Function: 
 
-The script contains an IEnumerator function that sends your prompt to the Gemini API `gemini-2.0-flash-exp-image-generation`, then it receives a generated image, and saves it inside your device.
+The script contains an IEnumerator function that sends your prompt to the Gemini API `gemini-2.5-flash-image`, then it receives a generated image, and saves it inside your device.
 There is a sample scene called `SkyGeneration` in the `Example` folder.  
 
 `private IEnumerator SendPromptRequestToGeminiImageGenerator(string promptText)`
 
-![](/Images/SkyScene.JPG)
+Note: All functions and variables related to image generation have been properly commented. Please be aware that Google now charges based on the number of images generated. 
+
+![](/Images/Flash-Image.PNG)
 
 Multimodal Prompt Function:
 
