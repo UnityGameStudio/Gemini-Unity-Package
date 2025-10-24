@@ -36,13 +36,14 @@ In the component bar you will see a `JsonApi` option where you will attach the `
 
 This plugin provides two public functions. One function to send a prompt, and receive a text reply from the Gemini API. And another function to send a chat history, and receive a reply from the Gemini API based on the chat. 
 
-Prompt Function: 
+## Prompt Function: 
 
 The script contains an IEnumerator function that sends your prompt to the Gemini API and prints the response to the console by calling Debug.Log().
 
 `private IEnumerator SendPromptRequestToGemini(string promptText)`
 
-Chatbot Function:
+
+## Chatbot Function:
 
 The script contains an IEnumerator function that stores the user and Gemini responses, then sends the chat history to the Gemini API and prints the response to the console by calling Debug.Log().
 There is a sample scene called `Chatbot` in the `Example` folder.  
@@ -55,18 +56,20 @@ The chatbot function now possess a `Bot Instructions` field, where you can add a
 
 ![](/Images/ChatbotScene.JPG)
 
-[Legacy] Image Prompt Function: 
+
+## [Legacy] Image Prompt Function: 
 
 The script contains an IEnumerator function that sends your prompt to the Gemini API `gemini-2.5-flash-image`, then it receives a generated image, and saves it inside your device.
 There is a sample scene called `SkyGeneration` in the `Example` folder.  
 
 `private IEnumerator SendPromptRequestToGeminiImageGenerator(string promptText)`
 
-Note: All functions and variables related to image generation have been properly commented. Please be aware that Google now charges based on the number of images generated. 
+> Note: All functions and variables related to image generation have been properly commented. Please be aware that Google now charges based on the number of images generated. 
 
-![](/Images/Flash-Image.PNG)
+![](/Images/Flash-Image.png)
 
-Multimodal Prompt Function:
+
+## Multimodal Prompt Function:
 
 The script contains an IEnumerator function that reads a Media File through its File Path, then sends the bytes to the Gemini API along with your prompt. After, it prints the response to the console by calling Debug.Log().
 
