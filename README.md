@@ -1,5 +1,7 @@
 # Gemini-Unity-Package
 > There are two packages. One that works with versions of Unity 2021.x/2022.x and another that works with version 6.2
+
+
 > If you are using the chatbot scene, install properly the TextMesh Pro package, and reopen the scene! 
 
 # Installation
