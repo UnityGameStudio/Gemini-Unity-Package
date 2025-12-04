@@ -1,9 +1,10 @@
 # Gemini-Unity-Package
-> Currently, this plugin is only suported on versions of Unity 2021.x and above
+> There are two packages. One that works with versions of Unity 2021.x/2022.x and another that works with version 6.2
+> If you are using the chatbot scene, install properly the TextMesh Pro package, and reopen the scene! 
 
 # Installation
 
-This plugin is provided as a custom Unity package that you can import into any existing project with the Unity version 2021.x and above.
+This plugin is provided as a custom Unity package that you can import into any existing project.
 
 Once you've downloaded the Unity package, you can import the package into your scene through the `Gemini_Manager_V3` prefab. 
 
